@@ -64,13 +64,13 @@ header {
 
 /* Menu styles */
 
-ul {
+.menu {
     display: flex;
     height: 4.1rem;
     justify-content: space-between;
 }
 
-ul li {
+.menu li {
     display: inline-block;
     width: 33%;
     font-family: 'Open Sans', sans-serif;

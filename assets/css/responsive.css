@@ -1,25 +1,41 @@
 @media(max-width: 768px){
 
+    header {
+        flex-wrap: wrap;
+    }
+
     .logo {
+        width: 100vw;
         font-size: 1.5rem;
+        margin: 0 auto;
+    }
+
+
+    .social {
+       visibility: hidden;
     }
 
     #search-ico {
-        margin-right: 0;
-    } 
+        visibility: visible;
+        position: absolute;
+        height: 2rem;
+        top: 5rem;
+        right: -2rem;
+    }
 
     .page-navigation {
-        width: 8rem;
+        width: 100%;
     }
+
 
     /* Menu block */
     #menuToggle {
       display: block;
       position: relative;
-      top: 0rem;
-      right: 0rem;
+      top: -10rem;
+      left: 0.5rem;
       
-      z-index: 1;
+      z-index: 3;
       
       -webkit-user-select: none;
       user-select: none; 
@@ -30,9 +46,7 @@
       width: 2.5rem;
       height: 2rem;
       position: absolute;
-      top: -0.7rem;
-      right: 0rem;
-    
+
       cursor: pointer;
 
       opacity: 0;
@@ -46,8 +60,7 @@
       height: 0.4rem;
       margin-bottom: 5px;
       position: relative;
-      top:-1.5rem;
-      right: -5.5rem;
+
     
       background: #0f0d0e;
       border-radius: 3px;
@@ -66,12 +79,12 @@
     }
 
     #menuToggle span:nth-last-child(2) {
-      transform-origin: 0% 0%;
+      transform-origin: 0% 100%;
     }
 
     #menuToggle input:checked ~ span {
       opacity: 1;
-      transform: rotate(45deg) translate(0px, -1px);
+      transform: rotate(45deg) translate(-2px, -1px);
       background: #232323;
     }
 
@@ -81,25 +94,28 @@
     }
 
     #menuToggle input:checked ~ span:nth-last-child(2) {
-      transform: rotate(-45deg) translate(0, -4px);
+      transform: rotate(270eg) translate(0, -1px);
     }
 
     #menu {
       position: absolute;
-      top: -2rem;
-      left: 8rem;
+      top: -1rem;
+      left: -20rem;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       
       width: 12.7rem;
+      height: 100vh;
       padding: 4rem;
       padding-top: 7rem;
      
       background: #ededed;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5); 
       -webkit-font-smoothing: antialiased;
       transform: none;
-      
+
+     
     }
     #menu li {
         margin: 0.5rem;
@@ -107,7 +123,8 @@
 
     #menuToggle input:checked ~ ul {
        transform-origin: 0% 0%;
-       transform: translate(-100%, 0);
+       transform: translate(150%, 0);
        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
+
 }
