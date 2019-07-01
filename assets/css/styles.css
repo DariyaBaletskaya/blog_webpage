@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #0f0d0e;
+    list-style: none;
+}
+
+a:hover {
+  color: #b59f5b;
+}
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* HEADER section */
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing:0.25rem;
+}
+
+.page-navigation {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    width: 15rem;
+}
+
+/* Social block */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.1rem;
+    
+}
+
+.social img {
+    height: 1.5rem;
+}
+
+#search-ico {
+   margin-right: 3rem;
+}
+
+/* Menu styles */
+
+ul {
+    display: flex;
+    height: 4.1rem;
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline-block;
+    width: 33%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#menuToggle input {
+  opacity: 0;
+}
