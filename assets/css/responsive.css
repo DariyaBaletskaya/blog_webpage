@@ -98,7 +98,7 @@
     }
 
     #menu {
-      position: absolute;
+      position: fixed;
       top: -1rem;
       left: -20rem;
       flex-direction: column;
@@ -110,7 +110,7 @@
       padding: 4rem;
       padding-top: 7rem;
      
-      background: #ededed;
+      background: #ededed8e;
       box-shadow: 0 0 10px rgba(0,0,0,0.5); 
       -webkit-font-smoothing: antialiased;
       transform: none;
