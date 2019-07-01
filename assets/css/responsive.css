@@ -32,7 +32,7 @@
     #menuToggle {
       display: block;
       position: relative;
-      top: -10rem;
+      top: -7.5rem;
       left: 0.5rem;
       
       z-index: 3;
@@ -127,4 +127,33 @@
        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
 
+    /* ARTICLE */
+    main {
+        width: 100%;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    article img, .article-content, .article-rating  {
+        position: static;
+        width: 100%;
+    }
+
+    .article-rating img {
+        position: static;
+    }
+
+    .article-header {
+        position: static;
+        margin-top: 5px;
+        width: 18rem;
+    }
+
+    
 }
