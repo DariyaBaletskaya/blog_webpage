@@ -469,7 +469,7 @@ article img, .image-box {
   color: #0f0d0ed0;
 
   text-overflow: ellipsis; 
-  width: 11rem; 
+  width: 80%; 
   white-space: nowrap; 
   overflow: hidden; 
 }
