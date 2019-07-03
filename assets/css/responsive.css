@@ -1,10 +1,11 @@
 
 @media(max-width: 1195px){
-  .content {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+    .content {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
     header {
       justify-content: center;
       align-items: center;
