@@ -5,7 +5,7 @@
       max-width: 100%;
       overflow-x: hidden;
     }
-    
+
     header {
       justify-content: center;
       align-items: center;
@@ -47,7 +47,6 @@
       
       z-index: 3;
   
-      -webkit-user-select: none;
       user-select: none; 
     }
   
@@ -61,7 +60,6 @@
   
       opacity: 0;
       z-index: 2; 
-      -webkit-touch-callout: none;
     }
   
     #menuToggle span {
@@ -103,7 +101,7 @@
     }
   
     #menuToggle input:checked ~ span:nth-last-child(2) {
-      transform: rotate(270eg) translate(0, -1px);
+      transform: rotate(-45deg) translate(0, -1px);
     }
   
     #menu {
@@ -121,8 +119,7 @@
       padding-top: 7rem;
   
       background: #ededed8e;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-      -webkit-font-smoothing: antialiased;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
       transform: none;
     }
