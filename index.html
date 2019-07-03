@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="title" content="Noémi — Just Blog It">
+    <meta name="description" content="First task solution for Binary Studio Academy 2019. JS">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Noémi — Just Blog It">
+    <meta property="og:description" content="First task solution for Binary Studio Academy 2019. JS">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Noémi — Just Blog It">
+    <meta property="twitter:description" content="First task solution for Binary Studio Academy 2019. JS">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" 
+            integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" 
+            crossorigin="anonymous"></script>
+
     <title>Noémi</title>
 </head>
 <body>
     <!-- Header section -->
-<div class="content">
+<div class="content" >
     <header>
         <div class="logo">
             <h1>Noémi</h1>
@@ -21,7 +42,7 @@
         
         <div class="page-navigation">
             <div class="social">
-                <img id="search-ico"src="assets/images/search.svg" alt="Search">
+                <img class="search-ico" id="search-header" src="assets/images/search.svg" alt="Search">
 
                 <a href="https://www.facebook.com/dariya.baletskaya" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
                 <a href="https://ua.linkedin.com/in/dariya-baletskaya" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
@@ -29,7 +50,7 @@
                 <a href="https://www.instagram.com/dariy_a/" target="_blank"><img src="assets/images/instagram.svg" alt="Instagram"></a>
             </div>
 
-            <nav role="navigation">
+            <nav>
             <div id="menuToggle"> 
             <input type="checkbox" />
                 <span></span>
@@ -37,23 +58,22 @@
                 <span></span>
 
                 <ul class="menu" id="menu">
-                    <a href=""><li>HOME</li></a>
-                    <a href=""><li>ABOUT</li></a>
-                    <a href=""><li>CONTACT</li></a>      
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>    
                 </ul>
             </div>
             </nav>
         </div>
-    </div> 
     </header>
-</div>
+ </div> 
 
     <!-- Main section -->
-    <div class="content">
+    <div class="content" id="grid">
     <main>
        <article>
            <div class="image-box">
-           <img src="assets/images/article1.jpg" alt="article1">
+           <img src="assets/images/article/article1.jpg" alt="article1">
            </div>
            <div class="article-header">
                <h3>ART HEALTH</h3>
@@ -75,15 +95,15 @@
                 </p>
 
                 <div class="article-rating">
-                    <small>5 </small><img src="assets/images/like.svg" alt="like">
-                    <small>1 </small> <img src="assets/images/comment.svg" alt="comment">
+                        <span>5</span><i class="fas fa-heart"></i>
+                        <span>3</span><i class="fas fa-comment"></i>
                 </div>
             </div>
        </article>
 
        <article>
             <div class="image-box">
-            <img src="assets/images/article2.jpg" alt="article2">
+            <img src="assets/images/article/article3.jpg" alt="article2">
             </div>
             <div class="article-header">
                 <h3>ART</h3>
@@ -103,15 +123,43 @@
                  </p>
 
                  <div class="article-rating">
-                     <small>20 </small><img src="assets/images/like.svg" alt="like">
-                     <small>5 </small><img src="assets/images/comment.svg" alt="comment">
+                        <span>5</span><i class="fas fa-heart"></i>
+                        <span>3</span><i class="fas fa-comment"></i>
                  </div>
              </div>
         </article>
 
         <article>
                 <div class="image-box">
-                <img src="assets/images/article3.jpg" alt="article3">
+                <img src="assets/images/article/article2.jpg" alt="article4">
+                </div>
+                <div class="article-header">
+                    <h3>HEALTH SPORT</h3>
+                    <h4>38 Health Benefits of Yoga</h4>
+     
+                    <div class="article-info">
+                        <p class="article-date">June 1, 2015</p>
+                        <p class="article-author">by Author Jane</p>
+                    </div>
+                 </div>
+     
+                <div class="article-content">
+                    <p>
+                        If you're a passionate yoga practitioner, you've probably noticed some yoga benefits—maybe
+                         you're sleeping better or getting fewer colds or just feeling more relaxed and at ease. 
+                         But if you've ever tried telling a newbie about the benefits of yoga, you might find that explanations 
+                         like "It increases the flow of prana" or "It brings energy up your spine" fall on deaf or skeptical ears.
+                     </p>
+                     <div class="article-rating">
+                           <span>5</span><i class="fas fa-heart"></i>
+                           <span>3</span><i class="fas fa-comment"></i>
+                     </div>
+                 </div>
+            </article>
+
+        <article>
+                <div class="image-box">
+                <img src="assets/images/article/article4.jpg" alt="article3">
                 </div>
                 <div class="article-header">
                     <h3>ART RELATIONSHIPS</h3>
@@ -131,19 +179,19 @@
                         like meeting people in real life was actually working for them. 
                      </p>
                      <div class="article-rating">
-                         <small>5 </small><img src="assets/images/like.svg" alt="like">
-                         <small>1 </small><img src="assets/images/comment.svg" alt="comment">
+                            <span>5</span><i class="fas fa-heart"></i>
+                            <span>3</span><i class="fas fa-comment"></i>
                      </div>
                  </div>
             </article>
 
             <article>
                     <div class="image-box">
-                    <img src="assets/images/article4.jpg" alt="article4">
+                    <img src="assets/images/article/article4.jpg" alt="article3">
                     </div>
                     <div class="article-header">
-                        <h3>HEALTH SPORT</h3>
-                        <h4>38 Health Benefits of Yoga</h4>
+                        <h3>ART RELATIONSHIPS</h3>
+                        <h4>How To Meet That Special Someone</h4>
          
                         <div class="article-info">
                             <p class="article-date">June 1, 2015</p>
@@ -152,21 +200,165 @@
                      </div>
          
                     <div class="article-content">
-                        <p>
-                            If you're a passionate yoga practitioner, you've probably noticed some yoga benefits—maybe
-                             you're sleeping better or getting fewer colds or just feeling more relaxed and at ease. 
-                             But if you've ever tried telling a newbie about the benefits of yoga, you might find that explanations 
-                             like "It increases the flow of prana" or "It brings energy up your spine" fall on deaf or skeptical ears.
+                        <p>Once upon a time, in an age before the Internet, the only way to meet people was to leave your apartment 
+                            and interact with humanity. I know it’s a scary thought — leaving your couch, taking off your sweatpants, 
+                            putting your Netflix binging on pause, and going out to meet people — but that’s just how the world worked.
+                            But considering how long the human race existed before the dawn of the Internet and online dating, it looks 
+                            like meeting people in real life was actually working for them. 
                          </p>
                          <div class="article-rating">
-                             <small>5</small> <img src="assets/images/like.svg" alt="like">
-                             <small>1 </small><img src="assets/images/comment.svg" alt="comment">
+                                <span>5</span><i class="fas fa-heart"></i>
+                                <span>3</span><i class="fas fa-comment"></i>
                          </div>
                      </div>
                 </article>
-    </main>
-</div>
 
+                <article>
+                        <div class="image-box">
+                        <img src="assets/images/article/article4.jpg" alt="article3">
+                        </div>
+                        <div class="article-header">
+                            <h3>ART RELATIONSHIPS</h3>
+                            <h4>How To Meet That Special Someone</h4>
+             
+                            <div class="article-info">
+                                <p class="article-date">June 1, 2015</p>
+                                <p class="article-author">by Author Jane</p>
+                            </div>
+                         </div>
+             
+                        <div class="article-content">
+                            <p>Once upon a time, in an age before the Internet, the only way to meet people was to leave your apartment 
+                                and interact with humanity. I know it’s a scary thought — leaving your couch, taking off your sweatpants, 
+                                putting your Netflix binging on pause, and going out to meet people — but that’s just how the world worked.
+                                But considering how long the human race existed before the dawn of the Internet and online dating, it looks 
+                                like meeting people in real life was actually working for them. 
+                             </p>
+                             <div class="article-rating">
+                                    <span>5</span><i class="fas fa-heart"></i>
+                                    <span>3</span><i class="fas fa-comment"></i>
+                             </div>
+                         </div>
+                    </article>
+    </main>
+    <!--Aside section-->
+   
+        <div class="author-info">
+            <div class="photo-wrapper">
+                <img src="assets/images/user/user-photo.png" alt="user">
+            </div>
+            
+            <h3>about me</h3>
+            <p class="autor-bio">
+                   Hi! I’m a New York gal putting down new roots in Orlando, 
+                   Florida with my hubby and our sailboat. My heart skips a beat 
+                   for all things creative, be it crafting, upcycling, sewing, 
+                   journaling…especially blogging. If I can make you smile or ignite 
+                   in you a spark of inspiration, then my job is done here. Won’t you 
+                   grab a cup of chai, a comfy blanket, and stay a while?
+            </p>
+        </div>
+  
+    <div id="navigation">
+        <div class="author-social">
+            <h3>follow me</h3>
+                <div class="social" id="social-aside">
+                        <a href="https://www.facebook.com/dariya.baletskaya" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://ua.linkedin.com/in/dariya-baletskaya" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="https://www.pinterest.com/baletskayadariya/" target="_blank"><img src="assets/images/pinterest.svg" alt="Pinterest"></a>
+                        <a href="https://www.instagram.com/dariy_a/" target="_blank"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+                    </div>
+        </div>
+
+        <div class="author-subscribe">
+            <h3>newsletter</h3>
+            <img src="assets/images/logo-underscore.svg" alt="">
+            <input type="text" placeholder="your name...">
+            <input type="text" placeholder="email...">
+            <input type="button" value="subscribe">
+        </div>
+        
+        <div class="aside-search">
+            <input type="text" placeholder="search...">
+            <img class="search-ico" src="assets/images/search.svg" alt="Search">
+        </div>
+
+        <div class="tags-container">
+            <h3>tags</h3>
+            <img src="assets/images/logo-underscore.svg" alt="">
+            <div class="tags">
+                <div class="tag">lorem</div>
+                <div class="tag">fashion</div>
+                <div class="tag">art</div>
+                <div class="tag">friends</div>
+                <div class="tag">music</div>
+                <div class="tag">sport</div>
+                <div class="tag">health</div>
+            </div>
+        </div>
+
+        <div class="recent-comments">
+            <h3>recent comments</h3>
+            <img src="assets/images/logo-underscore.svg" alt="">
+            
+            <div class="comment">
+                <img src="assets/images/user/comment-img.jpg" alt="" class="comment-img">
+                <div class="comment-content">
+                    <div class="comment-author">
+                        <p class="comment-name">John Doe</p>
+                        <p class="comment-date">3 days ago</p>
+                    </div>
+                    <p class="comment-text">This is awesome! Thank you so much! &#127881;&#127881;&#127881;</p> 
+                </div>
+            </div>
+
+            <div class="comment">
+                <img src="assets/images/user/comment-img.jpg" alt="" class="comment-img">
+                <div class="comment-content">
+                    <div class="comment-author">
+                        <p class="comment-name">John Doe</p>
+                        <p class="comment-date">3 days ago</p>
+                    </div>
+                        <p class="comment-text">This is awesome! Thank you so much! &#127881;&#127881;&#127881;</p> 
+                    </div>
+            </div>
+
+            <div class="comment">
+                <img src="assets/images/user/comment-img.jpg" alt="" class="comment-img">
+                <div class="comment-content">
+                    <div class="comment-author">
+                        <p class="comment-name">John Doe</p>
+                        <p class="comment-date">3 days ago</p>
+                    </div>
+                        <p class="comment-text"> Thank you so much! &#127881;&#127881;&#127881;</p> 
+                    </div>
+            </div>
+
+            <div class="comment">
+                <img src="assets/images/user/comment-img.jpg" alt="" class="comment-img">
+                <div class="comment-content">
+                    <div class="comment-author">
+                        <p class="comment-name">John Doe</p>
+                        <p class="comment-date">3 days ago</p>
+                    </div>
+                        <p class="comment-text"> Thank you so much! &#127881;&#127881;&#127881;</p> 
+                </div>
+            </div>
+
+            <div class="comment">
+                 <img src="assets/images/user/comment-img.jpg" alt="" class="comment-img">
+                 <div class="comment-content">
+                     <div class="comment-author">
+                        <p class="comment-name">John Doe</p>
+                        <p class="comment-date">3 days ago</p>
+                    </div>
+                        <p class="comment-text"> Thank you so much! &#127881;&#127881;&#127881;</p> 
+                 </div>
+            </div>
+
+        </div>
+    </div>
+</div>
     <!-- Footer section -->
     <div class="pre-footer">
         <h3>Follow @DARIY_A</h3>
