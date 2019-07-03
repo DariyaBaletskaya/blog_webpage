@@ -22,7 +22,7 @@
     <meta property="twitter:description" content="First task solution for Binary Studio Academy 2019. JS">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/site-icon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" 
@@ -34,7 +34,7 @@
 <body>
     <!-- Header section -->
 <div class="content" >
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>Noémi</h1>
             <img src="assets/images/logo-underscore.svg" alt="">
@@ -42,7 +42,7 @@
         
         <div class="page-navigation">
             <div class="social">
-                <img class="search-ico" id="search-header" src="assets/images/search.svg" alt="Search">
+                <img class="search-ico search-header"  src="assets/images/search.svg" alt="Search">
 
                 <a href="https://www.facebook.com/dariya.baletskaya" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
                 <a href="https://ua.linkedin.com/in/dariya-baletskaya" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
@@ -51,13 +51,13 @@
             </div>
 
             <nav>
-            <div id="menuToggle"> 
+            <div class="menu-toggle"> 
             <input type="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
 
-                <ul class="menu">
+                <ul class="site-menu">
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">CONTACT</a></li>    
@@ -69,9 +69,9 @@
  </div> 
 
     <!-- Main section -->
-    <div class="content" id="grid">
-    <main>
-       <article>
+    <div class="content grid">
+    <main class="articles-wrapper">
+       <article class="blog-article">
            <div class="image-box">
            <img src="assets/images/article/article1.jpg" alt="article1">
            </div>
@@ -101,7 +101,7 @@
             </div>
        </article>
 
-       <article>
+       <article class="blog-article">
             <div class="image-box">
             <img src="assets/images/article/article3.jpg" alt="article2">
             </div>
@@ -129,7 +129,7 @@
              </div>
         </article>
 
-        <article>
+        <article class="blog-article">
                 <div class="image-box">
                 <img src="assets/images/article/article2.jpg" alt="article4">
                 </div>
@@ -157,7 +157,7 @@
                  </div>
             </article>
 
-            <article>
+            <article class="blog-article">
                 <div class="image-box">
                 <img src="assets/images/article/article3.jpg" alt="article2">
                 </div>
@@ -185,7 +185,7 @@
                  </div>
             </article>
 
-            <article>
+            <article class="blog-article">
                     <div class="image-box">
                     <img src="assets/images/article/article4.jpg" alt="article3">
                     </div>
@@ -213,7 +213,7 @@
                      </div>
                 </article>
 
-                <article>
+                <article class="blog-article">
                     <div class="image-box">
                     <img src="assets/images/article/article1.jpg" alt="article1">
                     </div>
@@ -261,10 +261,10 @@
             </p>
         </div>
   
-    <div id="navigation">
+    <div class="navigation">
         <div class="author-social">
             <h3>follow me</h3>
-                <div class="social" id="social-aside">
+                <div class="social social-aside">
                         <a href="https://www.facebook.com/dariya.baletskaya" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a>
                         <a href="https://ua.linkedin.com/in/dariya-baletskaya" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
                         <a href="https://www.pinterest.com/baletskayadariya/" target="_blank"><img src="assets/images/pinterest.svg" alt="Pinterest"></a>
@@ -371,7 +371,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="logo logo-footer">
             <h1>Noémi</h1>
              <img src="assets/images/logo-underscore.svg" alt="">

@@ -28,7 +28,7 @@ a:hover {
 
 /* HEADER */
 
-header {
+.site-header {
   width: 100%;
   height: 17vh;
   padding: 0.8em;
@@ -78,7 +78,7 @@ header {
 
 /* MENU */
 
-.menu {
+.site-menu {
   display: flex;
   justify-content: space-between;
 }
@@ -88,12 +88,12 @@ header {
   width: 33%;
 }
 
-#menuToggle input {
+.menu-toggle input {
   opacity: 0;
 }
 
 /* MAIN */
-#grid {
+.grid {
   display: grid;
   grid-template-areas:
       "main author"
@@ -102,7 +102,7 @@ header {
   grid-template-rows: 1fr 1.7fr;
 }
 
-main {
+.articles-wrapper {
   margin-top: 2rem;
 
   display: grid;
@@ -115,11 +115,11 @@ main {
 }
 
 /* ARTICLE */
-article {
+.blog-article {
   height: 30rem;
 }
 
-article img, .image-box {
+.blog-article img, .image-box {
   position: relative;
   overflow: hidden;
   top: 2rem;
@@ -208,7 +208,7 @@ article img, .image-box {
 
 .article-content p {
   text-align: justify;
-  line-height: 1.3rem;
+  line-height: 1.5;
   font-size: 0.8rem;
   color: #0f0d0eb7;
 }
@@ -269,7 +269,7 @@ article img, .image-box {
 .recent-comments h3 {
   text-transform: uppercase;
   font-size: 0.9rem;
-  line-height: 1.3rem;
+  line-height: 1.5;
   color: #0f0d0e;
   text-align: center;
 
@@ -282,10 +282,10 @@ article img, .image-box {
   text-align: justify;
   font-size: 0.8rem;
   font-style: italic;
-  line-height: 1.2rem;
+  line-height: 1.8;
 }
 
-#navigation {
+.navigation {
   grid-area: navigation;
 
   display: flex;
@@ -344,7 +344,7 @@ article img, .image-box {
   font-style: normal;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 0.9rem;
-  line-height: 1.3rem;
+  line-height: 1.5;
 
   cursor: pointer;
 }
@@ -487,7 +487,7 @@ article img, .image-box {
 .pre-footer h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 0.8rem;
-  line-height: 2rem;
+  line-height: 2.3;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -497,7 +497,7 @@ article img, .image-box {
   width: 1.5rem;
 }
 
-footer {
+.site-footer {
   width: 100%;
   height: 8rem;
 
@@ -519,6 +519,6 @@ footer {
   color: #000000;
   font-size: 0.75rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 3;
   text-align: center;
 }
