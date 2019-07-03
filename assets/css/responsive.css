@@ -1,6 +1,10 @@
 
 @media(max-width: 1195px){
-
+  .content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
     header {
       justify-content: center;
       align-items: center;
@@ -16,13 +20,13 @@
       visibility: hidden;
    }
 
-   #social-aside {
-     visibility: visible;
-   }
+    #social-aside {
+      visibility: visible;
+    }
 
-   .page-navigation {
-     width: 0;
-   }
+    .page-navigation {
+      width: 0;
+    }
   
     #search-header {
       visibility: visible;
@@ -32,15 +36,14 @@
       right: -2rem;
     }
   
-  
-    /* Menu block */
+    /* Hamburger-Menu block */
+
     #menuToggle {
       display: block;
       position: fixed;
       top:0.8rem;
       left:0.8rem;
       
-  
       z-index: 3;
   
       -webkit-user-select: none;
@@ -66,7 +69,6 @@
       height: 0.4rem;
       margin-bottom: 5px;
       position: relative;
-  
   
       background: #0f0d0e;
       border-radius: 3px;
@@ -113,12 +115,14 @@
   
       width: 12.7rem;
       height: 100vh;
+
       padding: 4rem;
       padding-top: 7rem;
   
       background: #ededed8e;
       box-shadow: 0 0 10px rgba(0,0,0,0.5); 
       -webkit-font-smoothing: antialiased;
+
       transform: none;
     }
   
@@ -131,6 +135,8 @@
       transform: translate(150%, 0);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }  
+
+    /*Main section*/
 
     main {
       grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
@@ -147,16 +153,18 @@
         position: static;
         width: 100%;
     }
-
-    .article-rating {
-        margin-top: 10px;
-    }
-
+    
     .article-header {
         position: static;
         margin-top: 10px;
         width: 80%;
     }
+
+    .article-rating {
+        margin-top: 10px;
+    }
+
+    /* Aside section */
 
     .author-info {
       margin-left: 0.3rem;
@@ -179,6 +187,7 @@
 }
 
 @media(max-width: 930px){
+
   #grid {
     grid-template-areas:
         "main author"
